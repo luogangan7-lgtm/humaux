@@ -17,6 +17,12 @@
 
 ---
 
+> ### ⚡ 一句话完成配置
+> 对你的智能体说:**“读一下 https://github.com/luogangan7-lgtm/humaux,帮我配置 Humaux Memory。”**
+> 它会照 **[SETUP.md](SETUP.md)** 自己配置到正确的文件里 ——
+> 如果没有 `CLAUDE.md` / `AGENTS.md` / `.cursor/rules`,它会创建。
+> 想手动配?见 [一行接入](#一行接入)。
+
 ## Humaux 是什么
 
 智能体越来越能干,但它们缺的是**连续性** —— 每次会话结束,它们就忘了你是谁、

@@ -17,6 +17,12 @@ English · [简体中文](README.zh.md) · [Français](README.fr.md) · [Italian
 
 ---
 
+> ### ⚡ Set up in one message
+> Tell your agent: **“Read https://github.com/luogangan7-lgtm/humaux and set up Humaux Memory for me.”**
+> It will follow **[SETUP.md](SETUP.md)** and configure itself into the right file —
+> creating `CLAUDE.md` / `AGENTS.md` / `.cursor/rules` if they don't exist yet.
+> Prefer to do it by hand? See [Connect in one line](#connect-in-one-line).
+
 ## What is Humaux
 
 Agents are getting capable. What they lack is **continuity** — they forget who you

@@ -17,6 +17,12 @@ chaîne d'automatisation *autour des personnes, et non au-dessus d'elles.*
 
 ---
 
+> ### ⚡ Installation en un message
+> Dites à votre agent : **« Lis https://github.com/luogangan7-lgtm/humaux et configure Humaux Memory pour moi. »**
+> Il suivra **[SETUP.md](SETUP.md)** et se configurera dans le bon fichier —
+> en créant `CLAUDE.md` / `AGENTS.md` / `.cursor/rules` s'ils n'existent pas.
+> Vous préférez le faire à la main ? Voir [Connexion en une ligne](#connexion-en-une-ligne).
+
 ## Qu'est-ce que Humaux
 
 Les agents deviennent compétents. Ce qui leur manque, c'est la **continuité** — à

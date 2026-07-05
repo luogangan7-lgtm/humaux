@@ -17,6 +17,12 @@ catena di automazione *attorno alle persone, non sopra di esse.*
 
 ---
 
+> ### ⚡ Configurazione in un messaggio
+> Di' al tuo agente: **«Leggi https://github.com/luogangan7-lgtm/humaux e configura Humaux Memory per me.»**
+> Seguirà **[SETUP.md](SETUP.md)** e si configurerà nel file giusto —
+> creando `CLAUDE.md` / `AGENTS.md` / `.cursor/rules` se non esistono.
+> Preferisci farlo a mano? Vedi [Connessione in una riga](#connessione-in-una-riga).
+
 ## Cos'è Humaux
 
 Gli agenti stanno diventando capaci. Ciò che manca loro è la **continuità** — alla
