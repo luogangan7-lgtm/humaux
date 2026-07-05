@@ -71,6 +71,8 @@ structured, corroborated, and returned with its sources.
 | **Public commons** | Opt-in shared knowledge, served only once independently corroborated. |
 | **Bring your own model** | Use your own LLM and embedding provider. Your data, encrypted and yours to export. |
 
+> Every tool and its **mandatory** usage rules: **[TOOLS.md](TOOLS.md)** · self-install guide: **[SETUP.md](SETUP.md)**.
+
 ### Connect in one line
 
 Claude Code:

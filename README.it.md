@@ -73,6 +73,8 @@ con le loro fonti.
 | **Bene comune pubblico** | Conoscenza condivisa su base volontaria, fornita solo una volta corroborata in modo indipendente. |
 | **Il tuo modello** | Usa il tuo LLM e il tuo provider di embedding. I tuoi dati, cifrati ed esportabili. |
 
+> Ogni strumento e le sue regole d'uso **obbligatorie**: **[TOOLS.md](TOOLS.md)** · guida di auto-installazione: **[SETUP.md](SETUP.md)**.
+
 ### Connessione in una riga
 
 Claude Code:

@@ -70,6 +70,8 @@ Windsurf、Gemini CLI、Cline** 等等 —— 通过 [MCP](https://modelcontextp
 | **公共知识池** | 自愿共享的知识,仅在被独立佐证后才对外提供。 |
 | **自带模型** | 用你自己的 LLM 和向量模型。你的数据,加密存储,随时可导出。 |
 
+> 全部工具及其**强制**使用约束:**[TOOLS.md](TOOLS.md)** · 自助安装指南:**[SETUP.md](SETUP.md)**。
+
 ### 一行接入
 
 Claude Code:

@@ -73,6 +73,8 @@ corroborées et restituées avec leurs sources.
 | **Bien commun public** | Connaissances partagées sur option, servies uniquement une fois corroborées de façon indépendante. |
 | **Votre propre modèle** | Utilisez votre LLM et votre fournisseur d'embeddings. Vos données, chiffrées et exportables. |
 
+> Chaque outil et ses règles d'usage **obligatoires** : **[TOOLS.md](TOOLS.md)** · guide d'auto-installation : **[SETUP.md](SETUP.md)**.
+
 ### Connexion en une ligne
 
 Claude Code :
