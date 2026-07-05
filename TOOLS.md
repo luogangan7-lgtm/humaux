@@ -102,11 +102,14 @@ Link a memory (a decision/rationale) to a code entity in the graph.
 - When a stored decision explains **why** a piece of code is the way it is, link them
   so future "why is this here?" queries surface the reason.
 
-### `memory_task_canvas_get()`  ·  `memory_task_canvas_update(elements | ops, base_version)`
-A shared task canvas for multi-agent coordination.
-- In multi-agent work, **MUST** `canvas_get` before acting and `canvas_update` after,
-  and **MUST** respect version conflicts (re-read and retry — never blind-overwrite a
-  peer's element).
+### `memory_task_canvas_get()`  ·  `memory_task_canvas_update(elements | ops, base_version)`  🟠
+A persistent task canvas — your plan and progress, stored in the memory DB.
+- For any **multi-step / multi-session** task, you **MUST** `canvas_get` at the start
+  to load the current plan, write the plan as elements (one per step, status
+  todo/doing/done), and `canvas_update` as each step completes. A future session
+  resumes exactly where you left off — this is how you don't forget mid-task.
+- In multi-agent work, **MUST** respect version conflicts (re-read and retry — never
+  blind-overwrite a peer's element).
 
 ---
 
