@@ -26,6 +26,10 @@ Humaux builds the layer that stays. Not a bigger model, not another agent — th
 **human-shaped memory and tooling** your agents plug into, so the whole chain of
 work is built around you.
 
+<div align="center">
+<img src="assets/why.png" width="880" alt="Without a shared memory, every session starts from zero. With Humaux, agents pick up where you left off." />
+</div>
+
 Our roadmap runs in three stages:
 
 | Stage | Product | Status |
@@ -44,6 +48,10 @@ One persistent, structured memory that every agent — **Claude Code, Cursor, Co
 Windsurf, Gemini CLI, Cline** and more — connects to over [MCP](https://modelcontextprotocol.io).
 Store once; recalled everywhere. It remembers **decisions, not just chats** —
 structured, corroborated, and returned with its sources.
+
+<div align="center">
+<img src="assets/how-it-works.png" width="920" alt="How Humaux Memory works: agents connect over MCP to one shared memory with a cognitive pipeline (extract, connect, persona, skills), a knowledge graph and a code graph." />
+</div>
 
 ### What it does
 
@@ -74,6 +82,11 @@ npx -y humaux-memory-mcp --token <your-token>
 
 Grab your token at **[humaux.com → Connect](https://humaux.com/humauxmemory)**. New tools
 ship server-side, so your agents pick them up automatically — no reinstall.
+
+<div align="center">
+<img src="assets/connect.png" width="880" alt="The Humaux Connect screen: endpoint and token, one-click config for 14+ clients, and the tools your agent gains." />
+<br/><sub>The in-product Connect screen — one endpoint, every client, token masked.</sub>
+</div>
 
 ### Teach your agent to use it
 

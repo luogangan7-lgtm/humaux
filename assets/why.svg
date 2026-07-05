@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" width="1000" height="430" font-family="ui-sans-serif,-apple-system,Segoe UI,Roboto,PingFang SC,sans-serif">
+  <rect x="1" y="1" width="998" height="428" rx="18" fill="#F4F0E5" stroke="#E4E0D3"/>
+  <text x="40" y="50" font-size="21" font-weight="700" fill="#1B1913">Your agents are brilliant. And they forget everything.</text>
+  <text x="40" y="76" font-size="14" fill="#948C78">Every session starts from zero — you re-explain your stack, your decisions, your preferences. Again.</text>
+
+  <!-- Without -->
+  <rect x="40" y="104" width="440" height="292" rx="14" fill="#FBFAF4" stroke="#E4E0D3"/>
+  <circle cx="66" cy="136" r="9" fill="none" stroke="#948C78" stroke-width="1.8"/>
+  <path d="M62 136 L70 136" stroke="#948C78" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="86" y="141" font-size="15" font-weight="700" fill="#57513F">Without a shared memory</text>
+
+  <g font-size="13">
+    <rect x="64" y="162" width="392" height="60" rx="10" fill="#F4F0E5" stroke="#E4E0D3"/>
+    <text x="80" y="186" font-weight="600" fill="#1B1913">Monday · Cursor</text>
+    <text x="80" y="207" fill="#948C78">learns your architecture, your naming, your calls…</text>
+
+    <rect x="64" y="234" width="392" height="60" rx="10" fill="#F4F0E5" stroke="#E4E0D3"/>
+    <text x="80" y="258" font-weight="600" fill="#1B1913">Wednesday · Claude Code</text>
+    <text x="80" y="279" fill="#A83A2E">“Remind me — what does this project do?”</text>
+  </g>
+  <text x="64" y="330" font-size="12.5" fill="#948C78">✕  context re-typed every session</text>
+  <text x="64" y="354" font-size="12.5" fill="#948C78">✕  tools contradict each other</text>
+  <text x="64" y="378" font-size="12.5" fill="#948C78">✕  hard-won lessons lost</text>
+
+  <!-- With -->
+  <rect x="520" y="104" width="440" height="292" rx="14" fill="#FCFBF7" stroke="#D6D0BF"/>
+  <circle cx="546" cy="136" r="9" fill="#A83A2E"/>
+  <path d="M542 136 L545 139 L551 132" stroke="#F4F0E5" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="566" y="141" font-size="15" font-weight="700" fill="#1B1913">With Humaux</text>
+
+  <g font-size="13">
+    <rect x="544" y="162" width="392" height="60" rx="10" fill="#F4F0E5" stroke="#E4E0D3"/>
+    <text x="560" y="186" font-weight="600" fill="#1B1913">Monday · Cursor</text>
+    <text x="560" y="207" fill="#5E7C48">learns → saved to one shared memory ✓</text>
+
+    <rect x="544" y="234" width="392" height="60" rx="10" fill="#F4F0E5" stroke="#E4E0D3"/>
+    <text x="560" y="258" font-weight="600" fill="#1B1913">Wednesday · Claude Code</text>
+    <text x="560" y="279" fill="#5E7C48">already knows — picks up where you left off ✓</text>
+  </g>
+  <text x="544" y="330" font-size="12.5" fill="#57513F">✓  one memory, every agent</text>
+  <text x="544" y="354" font-size="12.5" fill="#57513F">✓  decisions &amp; sources, not raw chat</text>
+  <text x="544" y="378" font-size="12.5" fill="#57513F">✓  injected automatically — never re-explain</text>
+</svg>

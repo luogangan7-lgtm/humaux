@@ -27,6 +27,10 @@ Humaux construit la couche qui demeure. Pas un modèle plus grand, ni un agent d
 plus — la **mémoire et les outils à taille humaine** auxquels vos agents se
 branchent, pour que toute la chaîne de travail soit bâtie autour de vous.
 
+<div align="center">
+<img src="assets/why.png" width="880" alt="Sans mémoire partagée, chaque session repart de zéro ; avec Humaux, les agents reprennent où vous en étiez." />
+</div>
+
 Notre feuille de route se déroule en trois étapes :
 
 | Étape | Produit | Statut |
@@ -46,6 +50,10 @@ Cursor, Codex, Windsurf, Gemini CLI, Cline** et d'autres — se connecte via
 [MCP](https://modelcontextprotocol.io). Enregistrez une fois ; rappelé partout.
 Elle retient les **décisions, pas seulement les conversations** — structurées,
 corroborées et restituées avec leurs sources.
+
+<div align="center">
+<img src="assets/how-it-works.png" width="920" alt="Fonctionnement de Humaux Memory : les agents se connectent via MCP à une mémoire partagée avec un pipeline cognitif, un graphe de connaissances et un graphe de code." />
+</div>
 
 ### Ce qu'elle fait
 
@@ -77,6 +85,11 @@ npx -y humaux-memory-mcp --token <votre-token>
 Récupérez votre token sur **[humaux.com → Connect](https://humaux.com/humauxmemory)**.
 Les nouveaux outils arrivent côté serveur : vos agents les récupèrent
 automatiquement, sans réinstallation.
+
+<div align="center">
+<img src="assets/connect.png" width="880" alt="L'écran Connect de Humaux : point de terminaison et token, configuration en un clic pour 14+ clients, et les outils que gagne votre agent." />
+<br/><sub>L'écran Connect dans le produit — un point de terminaison, tous les clients, token masqué.</sub>
+</div>
 
 ### Apprenez à votre agent à l'utiliser
 

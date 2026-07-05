@@ -27,6 +27,10 @@ Humaux costruisce lo strato che resta. Non un modello più grande, né un altro
 agente — la **memoria e gli strumenti a misura d'uomo** a cui i tuoi agenti si
 collegano, così l'intera catena di lavoro è costruita attorno a te.
 
+<div align="center">
+<img src="assets/why.png" width="880" alt="Senza una memoria condivisa ogni sessione riparte da zero; con Humaux gli agenti riprendono da dove avevi lasciato." />
+</div>
+
 La nostra roadmap si sviluppa in tre fasi:
 
 | Fase | Prodotto | Stato |
@@ -46,6 +50,10 @@ Codex, Windsurf, Gemini CLI, Cline** e altri — si collega tramite
 [MCP](https://modelcontextprotocol.io). Salva una volta; richiamato ovunque.
 Ricorda le **decisioni, non solo le chat** — strutturate, corroborate e restituite
 con le loro fonti.
+
+<div align="center">
+<img src="assets/how-it-works.png" width="920" alt="Come funziona Humaux Memory: gli agenti si collegano via MCP a una memoria condivisa con una pipeline cognitiva, un grafo della conoscenza e un grafo del codice." />
+</div>
 
 ### Cosa fa
 
@@ -77,6 +85,11 @@ npx -y humaux-memory-mcp --token <il-tuo-token>
 Ottieni il token su **[humaux.com → Connect](https://humaux.com/humauxmemory)**. I
 nuovi strumenti arrivano lato server: i tuoi agenti li adottano automaticamente,
 senza reinstallare.
+
+<div align="center">
+<img src="assets/connect.png" width="880" alt="La schermata Connect di Humaux: endpoint e token, configurazione in un clic per 14+ client e gli strumenti che il tuo agente ottiene." />
+<br/><sub>La schermata Connect nel prodotto — un endpoint, ogni client, token mascherato.</sub>
+</div>
 
 ### Insegna al tuo agente a usarla
 
