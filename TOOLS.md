@@ -48,7 +48,7 @@ Search the user's own uploaded documents.
 - **MUST** be used before telling the user you don't have information they say is in
   **their** documents/files. Do not answer "I don't know" without searching first.
 
-### `memory_meta(action, query?)`  — `action ∈ {persona, status, skills, related, contradictions}`
+### `memory_meta(action, …)`  — `action ∈ {persona, status, skills, related, contradictions, list, feedback}`
 Metacognition over the memory system.
 - Before a **significant or architectural decision**, you **MUST** run
   `action:"contradictions"` (and `related` on the topic) to surface conflicting past
@@ -87,29 +87,50 @@ Remove one memory across all stores.
 - **ONLY** for a memory that is wrong or obsolete. **NEVER** as bulk cleanup, and
   **NEVER** on a memory you can't confirm is the user's.
 
-### `memory_list(limit?)`
-List recent memories (titles/ids).
-- For browsing/confirming what's stored. **Do not** use it for recall — that is
-  `memory_search`'s job.
+### `memory_meta(action:"list", limit?)`
+Browse recent memories (titles/ids). For confirming what's stored — **not** recall;
+that is `memory_search`'s job. (The old `memory_list` name still works.)
 
-### `memory_feedback(skill_id, outcome, memory_ids?, context?)`  — `outcome ∈ {success, failure, partial}`
+### `memory_meta(action:"feedback", skill_id, outcome, memory_ids?, context?)` — `outcome ∈ {success, failure, partial}`
 Report how a skill performed so its effectiveness score adapts.
 - After you apply a skill from `memory_meta(action:"skills")`, **ALWAYS** report the
-  outcome. Only pass a `skill_id` you got from that list.
+  outcome. Only pass a `skill_id` you got from that list. (Old name `memory_feedback`
+  still works.)
 
 ### `code_memory_link(memory_id, entity_name)`
 Link a memory (a decision/rationale) to a code entity in the graph.
 - When a stored decision explains **why** a piece of code is the way it is, link them
   so future "why is this here?" queries surface the reason.
 
-### `memory_task_canvas_get()`  ·  `memory_task_canvas_update(elements | ops, base_version)`  🟠
+### `memory_task_canvas(action:"get"|"update", …)`  🟠
 A persistent task canvas — your plan and progress, stored in the memory DB.
-- For any **multi-step / multi-session** task, you **MUST** `canvas_get` at the start
+- For any **multi-step / multi-session** task, you **MUST** `action:"get"` at the start
   to load the current plan, write the plan as elements (one per step, status
-  todo/doing/done), and `canvas_update` as each step completes. A future session
+  todo/doing/done), and `action:"update"` as each step completes. A future session
   resumes exactly where you left off — this is how you don't forget mid-task.
 - In multi-agent work, **MUST** respect version conflicts (re-read and retry — never
   blind-overwrite a peer's element).
+
+---
+
+## Coordination — parallel agents 🟠
+
+### `coord_task(action, agent_id, …)` — `action ∈ {submit, claim, heartbeat, complete, fail, cancel, block, resume, handoff, list}`
+The team's shared task queue with lease-based claiming and durable retry.
+- **BEFORE** picking up work in a multi-agent session, `action:"claim"` and output
+  `📋 claimed: <title>`. **NEVER** work on a task another agent holds —
+  `action:"list"` shows the board.
+- Renew with `action:"heartbeat"` before the lease expires (default 15 min), or the
+  task is automatically requeued for other agents.
+- Finish with `complete` (attach `result`), `fail` (set `retryable:true` for
+  transient errors — it requeues with backoff), or `handoff` (a short `summary` +
+  optional `memory_id` so the next agent continues instead of restarting).
+
+### `coord_lock(action, agent_id, resource?)` — `action ∈ {acquire, release, list}`
+Advisory resource locks: claim a file/entity **before** editing it.
+- If `acquire` returns BUSY, the reply names the holder and lease expiry — work on
+  something else; **do not** edit the resource anyway.
+- Locks expire automatically if the holder dies; re-acquiring your own lock extends it.
 
 ---
 
